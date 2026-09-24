@@ -11,38 +11,41 @@ This practice demonstrates how to:
 
 ---
 
-## 1. Process Concatenation
+## 1. Creating Variables
 
-In this step, the date components are combined using the `+` operator[cite: 2].
+Three string variables are created :
 
-A comma `","` is added between the components so that the final result is displayed correctly[cite: 2].
+- FirstName - stores the first name
+- SecondName - stores the second name
+- FullName - stores the complete full name
 
-The result is stored in the `Full_Date` variable[cite: 2].
+The following screenshot shows how the variables are declared in C#.
 
-The following screenshot shows the string concatenation process[cite: 2, 5].
+![Creating Variables](Screenshots/Creating_Variables.png)
 
-![String Concatenation](Screenshots/String_Concatination.png)
+csharp
+string FirstName, SecondName, FullName;
 
-## 2. Initializing Variables
+---
 
-In this step, values are read from the Form controls and assigned to variables[cite: 3]:
+## 2. Concatenating the First Name and Second Name
 
-- `dayof_week` - stores the day string from `txtdayoftheweek`[cite: 3]
-- `Name_of_the_Month` - stores the month name from `txtdayofthemonth`[cite: 3]
-- `Numeric_Day` - parsed integer value from `txtmonth`[cite: 3]
-- `Year` - parsed integer value from `txtyear`[cite: 3]
-- `Full_Date` - initially stores the text from `txtyear`[cite: 3]
+In this step, the first name and second name are combined using the + operator.
 
-The following screenshot shows how the variables are initialized in C#[cite: 3].
+A space " " is added between the two names so that the final result is displayed correctly.
 
-![Initializing Variables](Screenshots/initialize_values.png)
+The result is stored in the FullName variable.
 
-## 3. Displaying Output Using Label
+The following screenshot shows the string concatenation process.
 
-After the date components are combined, the value stored in `Full_Date` is displayed in a Label control[cite: 1, 4].
+![String Concatenation ](Screenshots/String_Concatination.png)
 
-The `.Text` property of the label is used to show the result on the Windows Form[cite: 1, 4].
+## 3. Displaying the Full Name
 
-The following screenshot shows how the output is displayed[cite: 1, 4].
+After the first name and second name are combined, the value stored in FullName is displayed in a Label control.
 
-![Displaying Output](Screenshots/output_using_label.png)
+The .Text property of the label is used to show the result on the Windows Form.
+
+The following screenshot shows how the full name is displayed.
+
+![Display Output](Screenshots/Display_Output.png)
